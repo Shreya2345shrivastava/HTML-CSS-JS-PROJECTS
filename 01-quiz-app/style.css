@@ -1,0 +1,71 @@
+/* Basic structure for a simple quiz app */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(185, 7, 7, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen {
+    display: none; /*visible only when active */
+    padding: 2rem;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+
+#start-screen h1 {
+    color: #5e3305; 
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#start-screen p {
+    color:#666666;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+.quiz-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #B55D00; 
+}
+
+#questions-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
